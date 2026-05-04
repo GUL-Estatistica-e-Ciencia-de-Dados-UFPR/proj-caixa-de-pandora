@@ -10,11 +10,9 @@ Este repositório existe para reunir, organizar e publicar as datas de provas, s
 
 Não.
 
-Você pode simplesmente abrir uma issue com a informação.
+Você pode simplesmente abrir uma issue com a informação e alguém vai adicionar para você.
 
-Git é bem-vindo, mas não é pré-requisito.
-
-A Caixa de Pandora aceita contribuições em vários níveis de sofrimento técnico.
+A Caixa de Pandora aceita contribuições em vários níveis de sofrimento técnico (veja abaixo).
 
 ---
 
@@ -27,7 +25,7 @@ Este projeto segue alguns princípios simples:
 2. Contribuir deve ser mais fácil do que reclamar no grupo.
 3. O histórico das alterações deve ser preservado.
 4. A fonte da informação deve ser registrada sempre que possível.
-5. A organização coletiva reduz ansiedade individual.
+5. Organização coletiva reduz ansiedade individual.
 6. Calendário bom é calendário que alguém consegue usar na semana da prova.
 
 ---
@@ -301,20 +299,6 @@ Use esta opção quando você quer:
 
 15. Aguarde revisão.
 
-## Guias oficiais do GitHub
-
-Documentação sobre fork:
-
-https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo
-
-Documentação sobre pull request a partir de fork:
-
-https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
-
-Documentação geral sobre criação de pull requests:
-
-https://docs.github.com/pt/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request
-
 ---
 
 # 🧱 Estrutura dos arquivos
@@ -332,7 +316,7 @@ A estrutura planejada do projeto é:
 
 Cada avaliação deve seguir, sempre que possível, o seguinte padrão:
 
-- **Status:** ✅ Confirmado, 🟡 A confirmar, 🔄 Alterado ou ❌ Cancelado
+- **Status:** ✅ Confirmado, 🟡 A confirmar ou ❌ Cancelado
 - **Chamada:** 1ª chamada, 2ª chamada ou não aplicável
 - **Data:** AAAA-MM-DD
 - **Horário:** HH:MM
@@ -405,7 +389,7 @@ O objetivo é evitar:
 
 O calendário será publicado automaticamente por GitHub Pages a cada alteração.
 
-A página publicada será gerada a partir dos arquivos Markdown do repositório.
+A página publicada é gerada a partir dos arquivos Markdown do repositório.
 
 Link da página publicada:
 
