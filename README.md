@@ -4,6 +4,34 @@ Bem-vindo(a) à **Caixa de Pandora da Estatística e Ciência de Dados da UFPR**
 
 Este repositório existe para reunir, organizar e publicar as datas de provas, segundas chamadas, trabalhos, entregas, seminários, apresentações e outras atividades avaliativas do curso de Estatística e Ciência de Dados da UFPR.
 
+---
+
+# 🆘 Preciso saber Git para contribuir?
+
+Não.
+
+Você pode simplesmente abrir uma issue com a informação.
+
+Git é bem-vindo, mas não é pré-requisito.
+
+A Caixa de Pandora aceita contribuições em vários níveis de sofrimento técnico.
+
+---
+
+
+# 🧠 Filosofia do projeto
+
+Este projeto segue alguns princípios simples:
+
+1. Informação acadêmica importante deve ser fácil de encontrar.
+2. Contribuir deve ser mais fácil do que reclamar no grupo.
+3. O histórico das alterações deve ser preservado.
+4. A fonte da informação deve ser registrada sempre que possível.
+5. A organização coletiva reduz ansiedade individual.
+6. Calendário bom é calendário que alguém consegue usar na semana da prova.
+
+---
+
 
 ## 🎯 Objetivo do projeto
 
@@ -150,9 +178,8 @@ Para o semestre 2026/1, edite:
 
 Link do arquivo no repositório:
 
-https://github.com/SEU-USUARIO-OU-ORGANIZACAO/NOME-DO-REPOSITORIO/blob/main/calendario/2026-1.md
+https://github.com/GUL-Estatistica-e-Ciencia-de-Dados-UFPR/proj-caixa-de-pandora/blob/main/calendario/2026-1.md
 
-Substitua `SEU-USUARIO-OU-ORGANIZACAO` e `NOME-DO-REPOSITORIO` pelos dados reais deste repositório.
 
 ## Passo a passo
 
@@ -206,21 +233,13 @@ Substitua `SEU-USUARIO-OU-ORGANIZACAO` e `NOME-DO-REPOSITORIO` pelos dados reais
 - Quando houver dúvida, registre a dúvida em **Comentários**.
 - Quando uma data mudar, registre também no histórico de alterações importantes do arquivo.
 
-## Guia oficial do GitHub
-
-Documentação sobre edição de arquivos no GitHub:
-
-https://docs.github.com/pt/repositories/working-with-files/managing-files/editing-files
 
 ---
 
 # 3. 🔵 Contribuir fazendo fork, edição local e pull request
 
-Esta é a opção mais completa.
 
 Use esta opção se você já está confortável com Git, GitHub, branches e pull requests, ou se quer treinar essas habilidades em um projeto real, útil e relativamente seguro.
-
-Nada como aprender Git tendo como motivação não perder a data da prova.
 
 ## Quando usar esta opção?
 
@@ -229,9 +248,8 @@ Use esta opção quando você quer:
 - fazer várias alterações de uma vez;
 - revisar o Markdown localmente;
 - editar com VS Code, Vim, Emacs, RStudio, Zed ou outro editor;
-- rodar scripts de validação localmente;
 - contribuir com melhorias estruturais no projeto;
-- alterar documentação, workflows, templates ou scripts.
+
 
 ## Passo a passo
 
@@ -306,10 +324,7 @@ A estrutura planejada do projeto é:
 - `README.md`: explicação geral do projeto.
 - `calendario/`: arquivos Markdown dos semestres.
 - `calendario/2026-1.md`: calendário do semestre 2026/1.
-- `.github/ISSUE_TEMPLATE/`: modelos para abertura de issues.
 - `.github/workflows/`: automações do GitHub Actions.
-- `docs/`: arquivos publicados no GitHub Pages, se o projeto usar publicação por pasta.
-- `scripts/`: scripts auxiliares de validação ou conversão, se forem adicionados.
 
 ---
 
@@ -339,7 +354,6 @@ Use os seguintes status:
 
 - ✅ **Confirmado:** informação confirmada por fonte oficial ou comunicação clara do professor.
 - 🟡 **A confirmar:** informação ainda incerta, incompleta ou informal.
-- 🔄 **Alterado:** informação mudou em relação ao registro anterior.
 - ❌ **Cancelado:** avaliação cancelada.
 
 ---
@@ -355,12 +369,9 @@ Fontes úteis:
 - professor(a);
 - e-mail institucional;
 - mensagem oficial em grupo da disciplina;
-- SIGA ou sistema acadêmico equivalente;
+- SIGA;
 - edital ou comunicado da coordenação.
 
-Evite registrar boatos sem marcar claramente como informação a confirmar.
-
-A Caixa de Pandora já é complicada o suficiente sem inferência bayesiana em fofoca acadêmica.
 
 ---
 
@@ -368,12 +379,7 @@ A Caixa de Pandora já é complicada o suficiente sem inferência bayesiana em f
 
 Não publique:
 
-- dados pessoais de estudantes;
-- justificativas individuais de ausência;
-- atestados;
-- prints com informações privadas;
-- notas individuais de estudantes;
-- conversas privadas sem autorização;
+- dados pessoais;
 - qualquer informação sensível.
 
 Links para resultados oficiais podem ser adicionados quando forem públicos ou acessíveis pelos meios institucionais adequados.
@@ -426,44 +432,3 @@ Os mantenedores são responsáveis por:
 - impedir que a Caixa de Pandora vire um experimento não controlado.
 
 ---
-
-# 🧠 Filosofia do projeto
-
-Este projeto segue alguns princípios simples:
-
-1. Informação acadêmica importante deve ser fácil de encontrar.
-2. Contribuir deve ser mais fácil do que reclamar no grupo.
-3. O histórico das alterações deve ser preservado.
-4. A fonte da informação deve ser registrada sempre que possível.
-5. A organização coletiva reduz ansiedade individual.
-6. Calendário bom é calendário que alguém consegue usar na semana da prova.
-
----
-
-# 🆘 Preciso saber Git para contribuir?
-
-Não.
-
-Você pode simplesmente abrir uma issue com a informação.
-
-Git é bem-vindo, mas não é pré-requisito.
-
-A Caixa de Pandora aceita contribuições em vários níveis de sofrimento técnico.
-
----
-
-# 📣 Sugestão de mensagem para divulgar o projeto
-
-Pessoal, criamos a **Caixa de Pandora da Estatística e Ciência de Dados da UFPR**, um calendário colaborativo para registrar provas, segundas chamadas, trabalhos e entregas do curso.
-
-Dá para contribuir de três formas:
-
-1. Abrindo uma issue com a informação, sem editar nada.
-2. Editando o Markdown direto pelo GitHub.
-3. Fazendo fork, edição local e pull request.
-
-A ideia é concentrar as datas em um lugar só e reduzir a chance de alguém descobrir uma prova por osmose cinco minutos antes.
-
-Link do repositório:
-
-https://github.com/SEU-USUARIO-OU-ORGANIZACAO/NOME-DO-REPOSITORIO
