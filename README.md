@@ -141,7 +141,7 @@ Corpo:
 - **Sala:** PA-08
 - **Conteúdo:** funções, equações, inequações e trigonometria básica
 - **Comentários:** prova sem consulta
-- **Fonte:** comunicado do professor no Moodle
+- **Fonte:** Publicado pelo professor na UFPR Virtual
 - **Notas/resultados:** a definir
 
 ---
@@ -364,7 +364,7 @@ Sempre que possível, informe a fonte da informação.
 
 Fontes úteis:
 
-- Moodle;
+- UFPR Virtual;
 - plano de ensino;
 - professor(a);
 - e-mail institucional;
@@ -390,8 +390,6 @@ Links para resultados oficiais podem ser adicionados quando forem públicos ou a
 
 As alterações podem ser revisadas por mantenedores antes de entrar no calendário principal.
 
-O objetivo da revisão não é burocratizar o processo.
-
 O objetivo é evitar:
 
 - data errada;
@@ -405,18 +403,13 @@ O objetivo é evitar:
 
 # 🗓️ Publicação
 
-O calendário pode ser publicado automaticamente por GitHub Pages.
+O calendário será publicado automaticamente por GitHub Pages a cada alteração.
 
 A página publicada será gerada a partir dos arquivos Markdown do repositório.
 
-Quando houver atualização no arquivo do semestre, a página pública também poderá ser atualizada automaticamente, dependendo da configuração do GitHub Actions.
-
 Link da página publicada:
 
-https://SEU-USUARIO-OU-ORGANIZACAO.github.io/NOME-DO-REPOSITORIO/
-
-Substitua `SEU-USUARIO-OU-ORGANIZACAO` e `NOME-DO-REPOSITORIO` pelos dados reais do projeto.
-
+[https://gul-estatistica-e-ciencia-de-dados-ufpr.github.io/proj-caixa-de-pandora/](https://gul-estatistica-e-ciencia-de-dados-ufpr.github.io/proj-caixa-de-pandora/)
 ---
 
 # 🧑‍🔧 Mantenedores
@@ -430,5 +423,7 @@ Os mantenedores são responsáveis por:
 - corrigir problemas de formatação;
 - manter o site publicado funcionando;
 - impedir que a Caixa de Pandora vire um experimento não controlado.
+
+Para ser um mantenedor entre em contato com Marcos de Carvalho (email institucional "carvalho.marcos") para ser adicionado ao repositório.
 
 ---
