@@ -1,0 +1,107 @@
+name: Build and publish calendar
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "calendario/**"
+      - "assets/**"
+      - "templates/**"
+      - ".github/workflows/pages.yml"
+
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "calendario/**"
+      - "assets/**"
+      - "templates/**"
+      - ".github/workflows/pages.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build static HTML
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Build site
+        run: |
+          set -euo pipefail
+
+          ACTIVE_SEMESTER="2026-1"
+
+          mkdir -p _site
+          mkdir -p _site/assets
+
+          if [ -d "assets" ]; then
+            cp -R assets/. _site/assets/
+          fi
+
+          for file in calendario/*.md; do
+            [ -e "$file" ] || continue
+
+            name="$(basename "$file" .md)"
+
+            pandoc "$file" \
+              --from gfm \
+              --to html5 \
+              --standalone \
+              --toc \
+              --metadata title="Caixa de Pandora da Estatística e Ciência de Dados da UFPR - ${name}" \
+              --css assets/style.css \
+              --include-before-body=templates/header.html \
+              --output "_site/${name}.html"
+          done
+
+          if [ ! -f "_site/${ACTIVE_SEMESTER}.html" ]; then
+            echo "Erro: arquivo _site/${ACTIVE_SEMESTER}.html não foi gerado."
+            exit 1
+          fi
+
+          cp "_site/${ACTIVE_SEMESTER}.html" "_site/index.html"
+
+          touch _site/.nojekyll
+
+      - name: Upload GitHub Pages artifact
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy artifact
+        id: deployment
+        uses: actions/deploy-pages@v4
