@@ -320,7 +320,7 @@ Cada avaliação deve seguir, sempre que possível, o seguinte padrão:
 - **Chamada:** 1ª chamada, 2ª chamada ou não aplicável
 - **Data:** AAAA-MM-DD
 - **Horário:** HH:MM
-- **Sala:** sala, laboratório, Moodle, GitHub, e-mail ou outro local
+- **Sala:** sala, laboratório, UFPR Virtual, GitHub, e-mail ou outro local
 - **Conteúdo:**
   - tópico 1
   - tópico 2
